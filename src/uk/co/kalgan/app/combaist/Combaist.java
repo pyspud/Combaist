@@ -9,5 +9,8 @@ public class Combaist extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        CombaistView cv = (CombaistView)this.findViewById(R.id.combaistView);
+        cv.setBearing(45);
     }
 }
