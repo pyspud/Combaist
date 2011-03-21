@@ -39,7 +39,7 @@ public class CombaistView extends View {
 		Resources r = this.getResources();
 		
 		circlePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-		circlePaint.setColor(r.getColor(R.color.background_color));
+		circlePaint.setColor(r.getColor(R.color.background));
 		circlePaint.setStrokeWidth(1);
 		circlePaint.setStyle(Paint.Style.FILL_AND_STROKE);
 		
@@ -49,12 +49,12 @@ public class CombaistView extends View {
 		westString = r.getString(R.string.cardinal_west);
 		
 		textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-		textPaint.setColor(r.getColor(R.color.text_color));
+		textPaint.setColor(r.getColor(R.color.text));
 		
 		textHeight = (int)textPaint.measureText("yY");
 		
 		markerPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-		markerPaint.setColor(r.getColor(R.color.marker_color));
+		markerPaint.setColor(r.getColor(R.color.marker));
 	}
 	
 	@Override
